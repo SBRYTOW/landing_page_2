@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CROISIERE Requins</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+	<div id="conteneurGlobal">
+
+
+		<div class="element1" id="informations">
+			<div id="marge">
+				<h1>Croisière de 15 jours en Mer Rouge</h1>
+				<h2>Plongez avec les REQUINS</h2>
+				<p>Vous avez besoin de soleil, de dépaysement et d'aventure...? Inscrivez-vous sur l'une de nos croisières et partez 2 semaines en mer rouge pour plonger avec des dauphins et des requins marteaux, renards, longimanus, corails....<br/></p>
+				<h2>3 spots uniques dans le monde :</h2>
+				<ul>
+					<li>Daedalus</li>
+					<li>Elphin Stone</li>
+					<li>Brothers</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="element2">
+			<h1>Réservez dès maintenant</h1>
+
+			<form id="formulaire" onSubmit="alert('Votre réservation est bien effectuée !');">
+				<div>
+					<label>Prénom :</label>
+					<input type="text" id="prenom" placeholder="Prénom" />
+				</div>
+				<div>
+					<label>Nom :</label>
+					<input type="text" id="nom" / placeholder="Nom" required>
+				</div>
+				<div>
+					<label>Niveau</label>
+					<select name="niveau" id="niveau" placeholder="" required>
+					<option value="blank">-</option>
+                    <option value="discover">Discover</option>
+                    <option value="openWater">Open Water</option>
+                    <option value="advanced">Advanced</option>
+                    <option value="rescueDiver">Rescue Diver</option>
+                <option value="diveMaster">Dive Master</option>
+                </select>
+				</div>
+				<div>
+					<label>Courriel :</label>
+					<input type="email" id="courriel" placeholder="Adresse mail" required />
+				</div>
+				<div>
+					<label for="message">Message :</label>
+					<textarea id="message" placeholder="Vous avez des questions ? N'hésitez pas à nous les poser."></textarea>
+				</div>
+
+				<div>
+					<input type="image" id="button" value="Envoyer" src="envoi.png" />
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	color: black;
+}
+
+#marge {
+	margin-left: 2rem;
+}
+
+#conteneurGlobal {
+	display: flex;
+	justify-content: space-around;
+}
+
+.element1 {
+	flex: 2;
+	justify-content: space-around;
+	margin: 0px;
+	background-image: url(banc-marteau.jpg);
+	background-repeat: repeat;
+
+	width: 100%;
+}
+
+.element2 {
+	flex: 1;
+	padding-left: 3rem;
+	background-color: azure;
+}
+
+p {
+	margin-top: 0px;
+	width: 60%;
+}
+
+#button {
+	margin: 0 40%;
+	width: 10%;
+}
+
+
+label {
+	width: 110px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 6px;
+}
+
+
+input[type=text],
+input[type=email],
+textarea {
+	border-radius: 10px;
+	height: 20px;
+}
+
+textarea {
+	height: 100px;
+}
+
+input:hover,
+textarea:hover {
+	background-color: beige;
+}
+
+input:focus {
+	background-color: beige;
+}
+
+
+
+@media all and (max-width: 700px) {
+	.element1 {
+		color: white;
+	}
+
+	#button {
+		width: 20%;
+	}
+
+	label {
+		display: none;
+	}
+
+	input {
+		margin: 1rem;
+
+	}
+
+	.element2 {
+		text-align: center;
+	}
+}
